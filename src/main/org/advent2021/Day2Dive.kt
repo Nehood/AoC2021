@@ -10,11 +10,11 @@ class Day2Dive {
         var depth = 0L
         var aim = 0L
 
-        instructions.forEach {instruction ->
+        instructions.forEach { instruction ->
             val elements = instruction.split(' ')
             val command = elements[0]
             val value = elements[1].toInt()
-            when (command){
+            when (command) {
                 FORWARD -> {
                     position += value
                     if (aimCorrection) depth -= (aim * value)
