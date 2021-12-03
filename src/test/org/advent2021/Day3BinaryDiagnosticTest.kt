@@ -22,7 +22,7 @@ internal class Day3BinaryDiagnosticTest {
     }
 
     @Test
-    fun doTestReading() {
+    fun doTestReadingPowerConsumption() {
         val input = """00100
                         11110
                         10110
@@ -45,7 +45,35 @@ internal class Day3BinaryDiagnosticTest {
     fun getSubmarinePowerConsumption() {
         val input = readResourceFile(inputFileName)
         val powerConsumption = day3BinaryDiagnostic.getSubmarinePowerConsumption(input)
-        val expected = 198
+        val expected = 2724524
+        assertEquals(expected, powerConsumption)
+    }
+
+    @Test
+    fun doTestReadingLifeSupportRating() {
+        val input = """00100
+                        11110
+                        10110
+                        10111
+                        10101
+                        01111
+                        00111
+                        11100
+                        10000
+                        11001
+                        00010
+                        01010"""
+
+        val lifeSupportRating = day3BinaryDiagnostic.getSubmarineLifeSupportRating(parseInput(input))
+        val expected = 230
+        assertEquals(expected, lifeSupportRating)
+    }
+
+    @Test
+    fun getSubmarineLifeSupportRating() {
+        val input = readResourceFile(inputFileName)
+        val powerConsumption = day3BinaryDiagnostic.getSubmarineLifeSupportRating(input)
+        val expected = 2775870
         assertEquals(expected, powerConsumption)
     }
 }
