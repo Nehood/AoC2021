@@ -15,7 +15,7 @@ internal class Day2DiveTest {
     }
 
     private fun parseInput(input: String): List<String> {
-        return input.trim().split('\n').map { it.trim() }
+        return input.split('\n').map { it.trim() }
     }
 
     @Test

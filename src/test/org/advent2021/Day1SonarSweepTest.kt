@@ -12,7 +12,7 @@ internal class Day1SonarSweepTest {
     private fun readResourceFile(fileName: String): List<Int> {
         val resourcesPath = "src/test/resources"
         val list = mutableListOf<Int>()
-        File("$resourcesPath/$fileName").forEachLine { list.add(it.toInt()) }
+        File("$resourcesPath/$fileName").forEachLine { list.add(it.trim().toInt()) }
         return list
     }
 
