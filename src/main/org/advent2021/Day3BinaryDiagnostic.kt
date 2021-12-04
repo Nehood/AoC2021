@@ -34,7 +34,7 @@ class Day3BinaryDiagnostic {
 
     fun getSubmarineLifeSupportRating(diagnosticReport: List<String>): Int {
         val oxygenGeneratorRating = determineLifeSupportRating(diagnosticReport, RatingType.OXYGEN)
-        var co2RubberRating = determineLifeSupportRating(diagnosticReport, RatingType.CO2)
+        val co2RubberRating = determineLifeSupportRating(diagnosticReport, RatingType.CO2)
 
         return oxygenGeneratorRating.toInt(2) * co2RubberRating.toInt(2)
     }
