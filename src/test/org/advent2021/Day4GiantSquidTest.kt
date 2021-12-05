@@ -9,7 +9,6 @@ import kotlin.math.exp
 internal class Day4GiantSquidTest {
 
     private val day4GiantSquid = Day4GiantSquid()
-
     private val inputFileName = "Day4Input.txt"
 
     private fun readResourceFile(fileName: String): List<String> {

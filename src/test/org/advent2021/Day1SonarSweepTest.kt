@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test
 import java.io.File
 
 internal class Day1SonarSweepTest {
-    private val day1SonarSweep = Day1SonarSweep()
 
+    private val day1SonarSweep = Day1SonarSweep()
     private val inputFileName = "Day1Input.txt"
 
     private fun readResourceFile(fileName: String): List<Int> {

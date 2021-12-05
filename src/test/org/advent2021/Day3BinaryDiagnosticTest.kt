@@ -7,7 +7,6 @@ import java.io.File
 internal class Day3BinaryDiagnosticTest {
 
     private val day3BinaryDiagnostic = Day3BinaryDiagnostic()
-
     private val inputFileName = "Day3Input.txt"
 
     private fun readResourceFile(fileName: String): List<String> {
