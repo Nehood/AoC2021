@@ -6,6 +6,8 @@ import java.io.File
 
 internal class Day2DiveTest {
 
+    private val NEWLINE = '\n'
+
     private val day2Dive = Day2Dive()
     private val inputFileName = "Day2Input.txt"
 
@@ -15,7 +17,7 @@ internal class Day2DiveTest {
     }
 
     private fun parseInput(input: String): List<String> {
-        return input.split('\n').map { it.trim() }
+        return input.split(NEWLINE).map { it.trim() }
     }
 
     @Test

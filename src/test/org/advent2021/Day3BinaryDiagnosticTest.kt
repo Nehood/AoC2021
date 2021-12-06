@@ -6,6 +6,8 @@ import java.io.File
 
 internal class Day3BinaryDiagnosticTest {
 
+    private val NEWLINE = '\n'
+
     private val day3BinaryDiagnostic = Day3BinaryDiagnostic()
     private val inputFileName = "Day3Input.txt"
 
@@ -17,7 +19,7 @@ internal class Day3BinaryDiagnosticTest {
     }
 
     private fun parseInput(input: String): List<String> {
-        return input.split('\n').map { it.trim() }
+        return input.split(NEWLINE).map { it.trim() }
     }
 
     @Test

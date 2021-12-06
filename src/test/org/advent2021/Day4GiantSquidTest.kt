@@ -4,9 +4,10 @@ import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
 import java.io.File
-import kotlin.math.exp
 
 internal class Day4GiantSquidTest {
+
+    private val NEWLINE = '\n'
 
     private val day4GiantSquid = Day4GiantSquid()
     private val inputFileName = "Day4Input.txt"
@@ -19,7 +20,7 @@ internal class Day4GiantSquidTest {
     }
 
     private fun parseInput(input: String): List<String> {
-        return input.split('\n').map { it.trim() }
+        return input.split(NEWLINE).map { it.trim() }
     }
 
     @Test

@@ -8,6 +8,8 @@ import kotlin.test.assertFailsWith
 
 internal class Day5HydrothermalVentureTest {
 
+    private val NEWLINE = '\n'
+
     private val day5HydrothermalVenture = Day5HydrothermalVenture()
     private val inputFileName = "Day5Input.txt"
 
@@ -19,7 +21,7 @@ internal class Day5HydrothermalVentureTest {
     }
 
     private fun parseInput(input: String): List<String> {
-        return input.split('\n').map { it.trim() }
+        return input.split(NEWLINE).map { it.trim() }
     }
 
     @Test

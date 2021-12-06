@@ -2,8 +2,6 @@ package org.advent2021
 
 import org.advent2021.data.Day5Line
 import kotlin.math.abs
-import kotlin.math.max
-import kotlin.math.min
 
 class Day5HydrothermalVenture {
 
