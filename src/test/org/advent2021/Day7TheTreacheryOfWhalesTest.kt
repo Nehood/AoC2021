@@ -40,8 +40,16 @@ internal class Day7TheTreacheryOfWhalesTest {
     @Test
     fun alignCrabsWithCrabEngineeringTest() {
         val input = intArrayOf(16, 1, 2, 0, 4, 2, 7, 1, 2, 14)
-        val fuelCostOfAligning = day7TheTreacheryOfWhales.alignCrabs(input)
+        val fuelCostOfAligning = day7TheTreacheryOfWhales.alignCrabsBruteForce(input)
         val expected = 168
+        assertEquals(expected, fuelCostOfAligning)
+    }
+
+    @Test
+    fun alignCrabsWithCrabEngineering() {
+        val input = readResourceFile(inputFileName)
+        val fuelCostOfAligning = day7TheTreacheryOfWhales.alignCrabsBruteForce(input)
+        val expected = 98039527
         assertEquals(expected, fuelCostOfAligning)
     }
 }

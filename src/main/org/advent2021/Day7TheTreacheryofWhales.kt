@@ -24,4 +24,32 @@ class Day7TheTreacheryOfWhales {
         return positions.sumOf { abs(it - level) }
     }
 
+    fun alignCrabsBruteForce(initialPositions: IntArray): Int {
+        val levelCostMap = mutableMapOf<Int, Int>()
+        for (level in initialPositions.minOf { it }..initialPositions.maxOf { it }) {
+            var cost = 0
+            for (position in initialPositions){
+                cost += sumNumbers(abs(position - level))
+            }
+            levelCostMap[level] = cost
+        }
+        return levelCostMap.values.minOf { it }
+    }
+
+    private fun sumNumbers(number: Int): Int {
+        var sum = 0
+        for (num in 1..number){
+            sum += num
+        }
+        return sum
+    }
 }
+
+/*
+1 - 1
+2 - 3
+3 - 6
+4 - 10
+5 - 15
+6 - 21
+ */
